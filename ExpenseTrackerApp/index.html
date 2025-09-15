@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Expanse Tracker</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <section class="box-upper">
+                <h1>Expanse Tracker</h1>
+                <div class="balance">
+                    <h2 id="netAmount">₹0</h2>
+                    <h3>Your Balance</h3>
+                </div>
+            </section>
+            <div class="transaction_container">
+                <h3>Transactions</h3>
+                <hr>
+                <div class="transactions">
+                
+                </div>
+            </div>
+            <section class="transaction_form">
+                <h3>Add Transactions</h3>
+                <form action="" id="transactionFrom">
+                    <div class="inputs">
+                        <div class="form_control">
+                            <label for="text">Text</label>
+                            <input placeholder="Enter Description" type="text" name="text" id="text">
+                        </div>
+                        <div class="form_control">
+                            <label for="amount">Amount</label>
+                            <input placeholder="Enter Amount" type="number" name="amount" id="amount">
+                        </div>
+                    </div>
+                    <div class="buttons_container">
+                        <button type="submit" id="earnBtn">
+                            <p id="earning">₹0</p>
+                            <p>Earning</p>
+                        </button>
+                        <button type="submit" id="expBtn">
+                            <p id="expense">₹0</p>
+                            <p>Expense</p>
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
